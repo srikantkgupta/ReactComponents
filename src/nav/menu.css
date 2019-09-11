@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box; 
+}
+html,body{
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.mobile-button{
+ cursor: pointer;
+ padding: 10px 20px;
+ border: 2px solid rgb(0, 2, 107);
+ color: #000;
+ background: #fff;
+ display: none;
+}
+
+.menu.horizontal{
+    width: auto;
+    padding: 10px 10px 0 10px;
+    margin: 10px 10px 0 10px;
+    background: #5f5f5f;
+    color: #fff;
+    text-align: left;
+}
+
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu.horizontal li{
+    padding: 5px 10px 15px 5px;
+    margin: 5px 5px 0 5px;
+    list-style: none;
+    display: inline-block;
+    border-bottom: 5px solid transparent; 
+    position: relative;
+    cursor: pointer;
+}
+
+.menu.horizontal li:hover{
+    border-bottom: 5px solid #fdbb30; 
+    
+}
+.menu.horizontal li:hover .sub{
+    display: block; 
+}
+.menu.horizontal li .sub{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: rgb(46, 46, 46);
+    top:47px;
+    left: 0;
+    
+   
+}
+
+.menu.horizontal li .sub ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu.horizontal li .sub li{
+    padding: 10px 15px;
+    margin: 0;
+    list-style: none;
+    display: block;
+    border: none;
+    cursor: pointer;
+    width:auto;
+    white-space: nowrap;
+    border-bottom: 1px dashed #fff
+}
+
+.menu.horizontal li .sub li:last-child{
+    border-bottom: none;
+}
+
+.menu.horizontal li .sub li:hover{
+    background: #fdbb30
+}
+
+/*Vertical*/
+.menu.vertical{
+    width: 200px;
+    margin: 10px;
+    background: #5f5f5f;
+    color: #fff;
+    text-align: left;
+}
+
+.menu.vertical li{
+    list-style: none;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu.vertical li span{
+    padding:5px 10px 15px 10px;
+    display: block
+}
+.menu.vertical li:hover{
+    background:#fdbb30; 
+    
+}
+.menu.vertical li:hover .sub{
+    display: block;
+    height: auto;
+}
+.menu.vertical li .sub{
+    display: none;
+    background: rgb(46, 46, 46);
+}
+
+.menu.vertical li .sub ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu.vertical li .sub li{    
+    margin: 0;
+    list-style: none;
+    display: block;
+    border: none;
+    cursor: pointer;
+    width:auto;
+    border-bottom: 1px dashed #fff
+}
+.menu.vertical li .sub li span{
+    padding: 10px 10px 10px 20px;
+    display: block
+}
+.menu.vertical li .sub li:last-child{
+    border-bottom: none;
+}
+
+.menu.vertical li .sub li:hover{
+    background: #919191
+}
+
+
+/*Mobile*/
+.mobile .mobile-button{display: block;}
+.menu.mobile{
+    width: 200px;
+    margin: 10px;
+    background: #5f5f5f;
+    color: #fff;
+    text-align: left;
+}
+.mobile nav{
+    display: none
+}
+.menu.mobile li{
+    list-style: none;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu.mobile li span{
+    padding:5px 10px 15px 10px;
+    display: block
+}
+.menu.mobile li:hover{
+    background:#fdbb30; 
+    
+}
+.menu.mobile li:hover .sub{
+    display: block;
+    height: auto;
+}
+.menu.mobile li .sub{
+    display: none;
+    background: rgb(46, 46, 46);
+}
+
+.menu.mobile li .sub ul{
+    padding: 0;
+    margin: 0;
+}
+
+.menu.mobile li .sub li{    
+    margin: 0;
+    list-style: none;
+    display: block;
+    border: none;
+    cursor: pointer;
+    width:auto;
+    border-bottom: 1px dashed #fff
+}
+.menu.mobile li .sub li span{
+    padding: 10px 10px 10px 20px;
+    display: block
+}
+.menu.mobile li .sub li:last-child{
+    border-bottom: none;
+}
+
+.menu.mobile li .sub li:hover{
+    background: #919191
+}

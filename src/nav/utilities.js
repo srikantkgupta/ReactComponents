@@ -1,0 +1,1 @@
+export const navType='mobile' //horizontal vertical mobile
